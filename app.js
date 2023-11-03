@@ -10,7 +10,7 @@ const Book = require("./model/Book");
 const app = express();
 
 mongoose.connect(
-  `mongodb+srv://malar:malar@cluster0.nutzu67.mongodb.net/Library?retryWrites=true&w=majority`
+  `mongodb+srv://malar:malar@cluster0.nutzu67.mongodb.net/Library?retryWrites=true&w=majority&ssl=true`
 );
 
 app.set("view engine", "ejs");
