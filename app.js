@@ -8,10 +8,10 @@ const User = require("./model/User");
 const Book = require("./model/Book");
 
 const app = express();
-
 mongoose.connect(
-  `mongodb+srv://malar:malar@cluster0.nutzu67.mongodb.net/Library?retryWrites=true&w=majority&ssl=true`
+  `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.nutzu67.mongodb.net/{process.env.MONGODB_DATABASE}?retryWrites=true&w=majority&ssl=true`
 );
+
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
