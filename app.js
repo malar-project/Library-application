@@ -9,7 +9,13 @@ const Book = require("./model/Book");
 
 const app = express();
 
-mongoose.connect("mongodb://localhost:27017/Library");
+mongoose.connect(
+  `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.mongodb.net/${process.env.MONGODB_DATABASE}?retryWrites=true&w=majority`,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
