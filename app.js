@@ -10,7 +10,7 @@ const Book = require("./model/Book");
 const app = express();
 
 mongoose.connect(
-  `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.mongodb.net/${process.env.MONGODB_DATABASE}?retryWrites=true&w=majority`
+  `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.umql3up.mongodb.net/${process.env.MONGODB_DATABASE}?retryWrites=true&w=majority`
 );
 
 app.set("view engine", "ejs");
