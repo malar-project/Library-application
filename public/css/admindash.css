@@ -7,16 +7,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center; /* Center both horizontally and vertically */
     min-height: 100vh;
 }
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Set the container width to 100% */
-    max-width: 1000px; /* Optionally, set a maximum width for the container */
-    margin: 0 auto; /* Center the container horizontally */
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -24,19 +25,17 @@ h1 {
     color: brown;
     text-align: center;
     padding: 10px;
-    margin: 0; 
+    margin: 0;
 }
 
-
-
 form {
-    width: 60%; /* Adjust the width of the form as needed */
+    width: 60%;
 }
 
 table {
     border-collapse: collapse;
-    width: 100%; /* Set table width to 100% to ensure labels and inputs align properly */
-    margin: 20px auto; /* Center the table */
+    width: 100%;
+    margin: 20px auto;
 }
 
 table td {
@@ -45,33 +44,36 @@ table td {
 
 label {
     font-weight: bold;
-    display: block; /* Display labels as block elements */
-    text-align: left; /* Align labels to the left */
+    display: block;
+    text-align: left;
 }
 
 input {
-    width: 100%; /* Input width set to 100% to expand across the table cell */
+    width: 100%;
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-button {
-    width: 30%;
-    padding: 10px;
-    margin: 0 auto;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    
-}
 .left-image {
     width: 60%; /* Adjust the width as needed */
     height: 60%; /* Maintain the aspect ratio */
 }
-button:hover {
-    background-color: #0056b3;
+
+.center-button-container {
+    text-align: center; /* Center horizontally */
+    margin-top: 20px; /* Adjust the top margin as needed */
+
 }
+
+.center-button {
+    width: 150px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    background-color: #007BFF; /* Blue background color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
