@@ -68,7 +68,10 @@ button {
     cursor: pointer;
     
 }
-
+.left-image {
+    width: 60%; /* Adjust the width as needed */
+    height: 60%; /* Maintain the aspect ratio */
+}
 button:hover {
     background-color: #0056b3;
 }
